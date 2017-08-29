@@ -27,7 +27,7 @@ JVM_PERMGEN_MEMORY="<%= scope.lookupvar('jira::jvm_permgen') %>"
 #
 # The following are the required arguments for JIRA.
 #
-JVM_REQUIRED_ARGS="-Djava.awt.headless=true -Datlassian.standalone=JIRA -Dorg.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER=true -Dmail.mime.decodeparameters=true"
+JVM_REQUIRED_ARGS="-Djava.awt.headless=true -Datlassian.standalone=JIRA -Dorg.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER=true -Dmail.mime.decodeparameters=true -Dorg.dom4j.factory=com.atlassian.core.xml.InterningDocumentFactory -Dnon.admin.upgrade=true"
 
 # Uncomment this setting if you want to import data without notifications
 #
